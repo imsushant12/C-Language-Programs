@@ -37,7 +37,7 @@ void dequeue(struct queue *q)
     }
 
     del = pop(&q->stack2);
-    printf("\n %d is deleted from queue.\n",del);
+    printf("\n%d is deleted from queue.\n",del);
 }
 
 void push(struct node** stack, int data)
@@ -77,18 +77,18 @@ int pop(struct node** stack)
     }
 }
 
-void display(struct node *stack1,struct node *stack2)
+void display(struct node *stack1 , struct node *stack2)
 {
-    while (stack2 != NULL)
-    {
-        printf("\nData = %d" , stack2->info);
-        stack2 = stack2->link;
-    }
-
     while (stack1 != NULL)
     {
-        printf("\nData = %d " , stack1->info);
+        printf("\nData = %d ", stack1->info);
         stack1 = stack1->link;
+    }
+
+    while (stack2 != NULL)
+    {
+        printf("\nData = %d", stack2->info);
+        stack2 = stack2->link;
     }
 }
 
@@ -104,23 +104,33 @@ void main()
 
     while(1)
     {
-        printf("\n1.Add to queue\n2.Delete from queue\n3.Display the elements\n4.Exit\nEnter your choice : ");
+        printf("\n1.Add Data\n2.Delete Data\n3.Display the elements\n4.Exit\nEnter your choice : ");
         scanf("%d" , &choice);
         switch(choice)
         {
-            case 1 : printf("\nEnter the element to be added to queue : ");
-                     scanf("%d" , &data);
-                     enqueue(q , data);
-                     break;
-            case 2 : dequeue(q);
-                     break;
-            case 3 : display(q->stack1 , q->stack2);
-                     break;
-            case 4 : exit(1);
-                     break;
-            default :
-                     printf("\nINVALID CHOICE...\n");
-                     break;
+        case 1 :
+            printf("\nEnter the element to be added to queue : ");
+            scanf("%d" , &data);
+            enqueue(q , data);
+            break;
+        case 2 :
+            dequeue(q);
+            break;
+        case 3 :
+            display(q->stack1, q->stack2);
+            break;
+        case 4 :
+            exit(1);
+            break;
+        default :
+            printf("\nINVALID CHOICE...\n");
+            break;
         }
     }
 }
+
+/*
+
+Sample Input-Output:
+
+*/

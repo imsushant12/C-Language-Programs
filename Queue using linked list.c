@@ -105,23 +105,23 @@ void main()
         switch(choice)
         {
         case 1:
-                enqueue();
-                break;
+            enqueue();
+            break;
         case 2:
-                dequeue();
-                break;
+            dequeue();
+            break;
         case 3:
-                peek();
-                break;
+            peek();
+            break;
         case 4:
-                display();
-                break;
+            display();
+            break;
         case 5:
-                remove_queue();
-                break;
+            remove_queue();
+            break;
         case 6:
-                exit(1);
-                break;
+            exit(1);
+            break;
         default:
             printf("Incorrect Choice\n");
         }
