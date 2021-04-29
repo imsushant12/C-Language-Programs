@@ -344,3 +344,84 @@ int main()
     }
     return 0;
 }
+
+/*
+
+Sample Input/Output:
+
+1. Insertion
+2. Deletion
+3. Traversal
+4. Check for AVL
+5. EXIT
+ENTER CHOICE : 1
+
+Enter element or press -1 : 15
+
+Enter element or press -1 : 10
+
+Enter element or press -1 : 20
+
+Enter element or press -1 : -1
+
+1. Insertion
+2. Deletion
+3. Traversal
+4. Check for AVL
+5. EXIT
+ENTER CHOICE : 3
+
+Pre-order traversal of the tree formed is : 15  10  20
+In-order traversal of the tree formed is : 10  15  20
+Post-order traversal of the tree formed is : 10  20  15
+1. Insertion
+2. Deletion
+3. Traversal
+4. Check for AVL
+5. EXIT
+ENTER CHOICE : 4
+
+Tree is AVL
+1. Insertion
+2. Deletion
+3. Traversal
+4. Check for AVL
+5. EXIT
+ENTER CHOICE : 2
+
+Enter element to be deleted : 10
+
+1. Insertion
+2. Deletion
+3. Traversal
+4. Check for AVL
+5. EXIT
+ENTER CHOICE : 3
+
+Pre-order traversal of the tree formed is : 15  20
+In-order traversal of the tree formed is : 15  20
+Post-order traversal of the tree formed is : 20  15
+1. Insertion
+2. Deletion
+3. Traversal
+4. Check for AVL
+5. EXIT
+ENTER CHOICE : 4
+
+Tree is AVL
+1. Insertion
+2. Deletion
+3. Traversal
+4. Check for AVL
+5. EXIT
+ENTER CHOICE : 5
+
+
+Time Complexity :
+    Insertion - O(logn)
+    Deletion - O(logn)
+    Traversal- O(n)
+    CheckAVL - O(1)
+Space Complexity : O(n)
+
+*/
