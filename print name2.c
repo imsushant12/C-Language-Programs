@@ -1,4 +1,0 @@
-main()
-{
-printf("sushant\ngaurav");
-}
