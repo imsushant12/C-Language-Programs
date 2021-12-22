@@ -372,6 +372,7 @@ int main()
                     printf("\nElement is found.");
                 else
                     printf("\nElement is not found.");
+                break;
         case 16:
                 exit(1);
                 break;
